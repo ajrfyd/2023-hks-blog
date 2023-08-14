@@ -13,5 +13,5 @@ const TitleTxt = styled.p<TitleProps>`
   font-family: Chicago;
   font-size: ${({ size }) => size ? `${size}rem` : "3rem"};
   text-align: center;
-  margin: .5rem 0;
+  margin: .6rem 0;
 `;

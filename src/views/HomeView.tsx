@@ -1,10 +1,16 @@
+import React from "react";
 import styled from "styled-components";
 import Title from "../components/Title";
 
-const Home = () => {
+type HomeViewProps = {
+  children: React.ReactNode;
+}
+
+const Home = ({ children }: HomeViewProps) => {
   return (
     <HomeContainer className="standard-dialog">
       <Title title="Welcome to HK's Blog" size={3} />
+      { children }
     </HomeContainer>
   )
 }

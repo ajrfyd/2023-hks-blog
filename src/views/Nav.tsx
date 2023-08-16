@@ -17,10 +17,11 @@ export default Nav;
 const NavContainer = styled.aside`
   flex: 4;
   height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;

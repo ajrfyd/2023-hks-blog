@@ -11,7 +11,7 @@ export default Title;
 
 const TitleTxt = styled.p<TitleProps>`
   font-family: Chicago;
-  font-size: ${({ size }) => size ? `${size}rem` : "3rem"};
+  font-size: ${({ size }) => size ? `${size}vw` : "5vw"};
   text-align: center;
   margin: .6rem 0;
 `;

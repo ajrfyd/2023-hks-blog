@@ -9,7 +9,7 @@ type HomeViewProps = {
 const Home = ({ children }: HomeViewProps) => {
   return (
     <HomeContainer className="standard-dialog">
-      <Title title="Welcome to HK's Blog" size={3} />
+      <Title title="Welcome to HK's Blog" size={4} />
       { children }
     </HomeContainer>
   )
@@ -21,4 +21,11 @@ const HomeContainer = styled.div`
   flex: 8;
   height: 100vh;
   margin: .9rem .5rem;
+  overflow-y: scroll;
+  /* min-height: 100vh; */
+
+  @media(max-width: 768px) {
+    display: block;
+    position: relative;
+  }
 `
